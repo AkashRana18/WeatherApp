@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    
+   {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- Left Div -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Want to Know Your City Weather?</p>
+                        <h1>Check Your City <span>Weather</span> Now</h1>
+                        <a href="/weather"><button class="btn btn-primary">Check Now</button></a>
+                    </div>
+
+
+                    <!-- Right Div -->
+
+                    <div class="col-md-6 col-12 main_header_right">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item ">
+                                    <img src="/images/bgrem3.jpg" class="w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/bgremove.png" class=" w-100" alt="...">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="/images/rem2.png" class="w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        {{!-- footer code --}}
+
+    {{>footer}}
+
+
+
+</body>
+
+</html>
