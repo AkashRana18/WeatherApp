@@ -42,19 +42,20 @@
     {{>footer}}
     <script src="js/main.js"></script>
     <script>
+
         const day = document.getElementById('day');
         const date = document.getElementById('date');
 
         const today = new Date();
         const options = {
             day: "numeric",
-            month: "long" 
+            month: "long"
         };
         const options2 = {
             weekday: "long"
         };
         day.innerHTML = today.toLocaleDateString("en-IN", options);
-        date.innerHTML = today.toLocaleDateString("en-IN", options2 );
+        date.innerHTML = today.toLocaleDateString("en-IN", options2);
 
     </script>
 

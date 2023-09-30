@@ -20,6 +20,7 @@ const connectDB = async () => {
       process.exit(1);
     }
   }
+  mongoose.set('strictQuery', true);
   
 
   const static_path = path.join(__dirname, "public");
