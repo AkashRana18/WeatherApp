@@ -6,7 +6,7 @@ const app = express();
 const session = require('express-session');
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-const User = require('../models/user');
+const User = require('./models/user');
 const PORT = process.env.PORT || 3000;
 
 const connectDB = async () => {
@@ -22,9 +22,9 @@ const connectDB = async () => {
   }
   
 
-const static_path = path.join(__dirname, "../public");
-const template_path = path.join(__dirname, "../templates/views");
-const partials_path = path.join(__dirname, "../templates/partials");
+  const static_path = path.join(__dirname, "public");
+  const template_path = path.join(__dirname, "templates/views");
+const partials_path = path.join(__dirname, "templates/partials");
 
 app.set('view engine', 'hbs');
 app.set('views', template_path);
