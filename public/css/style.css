@@ -310,7 +310,7 @@ sup {
 
         .temp_form input[type="text"] {
             padding: 2rem 3rem 2rem 2rem;
-            
+
         }
 
         .temp_form input[type="submit"] {
@@ -323,5 +323,10 @@ sup {
     .main_layer .middle_layer .fa {
         font-size: 3rem;
         font-weight: 900;
+    }
+    .main_header_left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+
     }
 }
