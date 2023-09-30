@@ -128,8 +128,6 @@
     "wordwrap": "^1.0.0",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {
-  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
