@@ -6,9 +6,8 @@ const app = express();
 const session = require('express-session');
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-const User = require('./models/user');
-const { error } = require('console');
-const PORT = process.env.PORT || 3000;
+const User = require('../models/user');
+const PORT = process.env.PORT || 8000;
 
 const connectDB = async () => {
     try {
@@ -21,12 +20,11 @@ const connectDB = async () => {
       process.exit(1);
     }
   }
-  mongoose.set('strictQuery', true);
   
 
-  const static_path = path.join(__dirname, "public");
-  const template_path = path.join(__dirname, "templates/views");
-const partials_path = path.join(__dirname, "templates/partials");
+const static_path = path.join(__dirname, "../public");
+const template_path = path.join(__dirname, "../templates/views");
+const partials_path = path.join(__dirname, "../templates/partials");
 
 app.set('view engine', 'hbs');
 app.set('views', template_path);
@@ -143,11 +141,11 @@ app.get('*', (req, res) => {
     res.render('404'); // Render the 404 page for any other routes not defined above
 });
 
-// Start the server on port 3000
+// Start the server on port 8000
 
 connectDB().then(() => {
     app.listen(PORT, () => {
-        console.log("listening to port http://localhost:3000");
+        console.log("listening to http://localhost:8000");
     })
 }).catch((err) => {
     console.log(err);
