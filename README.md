@@ -3,7 +3,7 @@
 Welcome to the Weather App, a Node.js-based application that provides real-time weather information at your fingertips. Whether you're planning a trip, checking the forecast for your location, or just curious about the weather, this app has you covered.
 # Weather App - Node.js
 
-(Live Link)[https://weatherapp-ccrn.onrender.com/]
+[Live Demo](https://weatherapp-ccrn.onrender.com/)
 
 ## Table of Contents
 
