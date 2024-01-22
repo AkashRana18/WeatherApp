@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
 
 // Hash the password before saving
 
+
 userSchema.pre('save', function (next) {
     if (this.isModified('password')) {
         const hash = crypto.createHash('sha256').update(this.password).digest('hex');
