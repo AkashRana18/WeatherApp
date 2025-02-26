@@ -72,7 +72,7 @@ Access it in your web browser at http://localhost:3000.
 
 Welcome to the Weather App! This Node.js-based application provides real-time weather information for locations around the world. Whether you're planning a trip, checking the forecast for your location, or just curious about the weather, this app has you covered.
 
-![Weather App Screenshot](/Screenshot.png)
+![Weather App Screenshot](/Weather.png)
 
 
 
