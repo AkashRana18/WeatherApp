@@ -1,56 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Login Page</title>
-    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/form.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-</head>
+    <link rel='shortcut icon' href='fav.ico' type='image/x-icon' />
+    <link rel='stylesheet' href='css/form.css' />
+    <link
+      href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'
+    />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'
+      rel='stylesheet'
+    />
+  </head>
 
-<body>
-    <div class="login-box">
+  <body>
+    <div class='login-box'>
 
-        <h1>Welcome Back</h1>
-        <p>Enter your details</p>
+      <h1>Welcome Back</h1>
+      <p>Enter your details</p>
 
-        <form action="/login" method="post">
-            <div class="form-group">
-                <label for="email">Email
+      <form action='/login' method='post'>
+        <div class='form-group'>
+          <label for='email'>Email
 
-                </label>
-                <i class="bx bx-user"></i>
+          </label>
+          <i class='bx bx-user'></i>
 
-                <input type="email" id="email" name="email" placeholder="Your email" required>
+          <input
+            type='email'
+            id='email'
+            name='email'
+            placeholder='Your email'
+            required
+          />
 
+          <label for='password'>Password</label>
+          <i class='bx bx-lock'></i>
 
-                <label for="password">Password</label>
-                <i class="bx bx-lock"></i>
+          <input
+            type='password'
+            name='password'
+            id='Passsword'
+            placeholder='Password'
+            required
+          />
+        </div>
+        <a class='forgot'>Forgot your password?
 
-                <input type="password" name="password" id="Passsword" placeholder="Password" required>
-            </div>
-            <a class="forgot">Forgot your password?
+        </a>
+        <input type='submit' value='Log In' />
+      </form>
 
-            </a>
-            <input type="submit" value="Log In">
-        </form>
+      {{#if successMessage}}
+        <div class='alert alert-success'>{{successMessage}}</div>
+      {{/if}}
 
-        {{#if successMessage}}
-        <div class="alert alert-success">{{successMessage}}</div>
-        {{/if}}
-
-        {{#if errorMessage}}
-        <div class="alert alert-danger">{{errorMessage}}</div>
-        {{/if}}
-
+      {{#if errorMessage}}
+        <div class='alert alert-danger'>{{errorMessage}}</div>
+      {{/if}}
 
     </div>
-</body>
+  </body>
 
 </html>

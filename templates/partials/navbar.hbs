@@ -6,8 +6,8 @@
                     <a class="navbar-brand" href="/">
                         <i class="fa-regular fa-snowflake"> </i>Weather App<i
                             class="fa-regular fa-snowflake"></i></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -21,7 +21,6 @@
                                 <a class="nav-link" href="/about">About </a>
                             </li>
                             
-
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">Follow Us </a>
@@ -31,10 +30,16 @@
                                     <li><a class="dropdown-item text-dark " href="https://twitter.com/Akash08_18" target="_blank">Twitter</a></li>
                                 </ul>
                             </li>
+                             {{#if isLoggedIn}}
                              <li class="nav-item">
-                                <a class="nav-link" href="/logout">Logout </a>
-                            </li>
-                            
+                            <a class="nav-link" href="/logout">Logout</a>
+                                </li>
+                    {{else}}
+                     <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                         </li>
+{{/if}}
+
                     </div>
                 </div>
             </nav>
